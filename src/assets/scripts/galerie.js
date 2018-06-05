@@ -1,5 +1,5 @@
 var galerie = document.getElementById("galerie");
-var pfaede = ["C:\\Users\\vmadmin\\Documents\\GitHub\\gibb\\src\\assets\\ressources\\pic\\Unbenannt.PNG"];
+var pfaede = ["../ressources/pic/Unbenannt.PNG"];
 function zeigeBilder() {
     for (var pfad in pfaede) {
         // skip loop if the property is from prototype
