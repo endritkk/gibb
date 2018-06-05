@@ -1,3 +1,7 @@
+p, h1, h2, h3{
+    font-family: rokkt;
+    font-family: 'Rokkitt', serif;
+}
 
 .bild{
     border-color: grey;
@@ -23,4 +27,12 @@ img {
 .beschreibung{
     margin-top: 10px;
     padding: 5px;
+}
+
+.infos{
+    margin-top: 10px;
+}
+
+.text{
+    margin-top: 10px;
 }
