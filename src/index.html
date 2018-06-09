@@ -1,86 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/style/bootstrap-4.0.0-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/style/bootstrap-4.0.0-dist/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="assets/style/bootstrap-4.0.0-dist/css/bootstrap-reboot.css">
-    <script src="assets/style/bootstrap-4.0.0-dist/js/bootstrap.bundle.js"></script>
-    <script src="assets/style/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
-    <script src="assets/scripts/galerie.js"></script>
+
+    <meta charset="utf-8">
+
+    <title>Lensless</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style/galerie.css">
+
+
+    <link href="css/style.css" rel="stylesheet">
+
 </head>
 
-<body onload="zeigeBilder()">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#">Lensless</a>
+<body id="page-top">
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-        <!--<form class="form-inline my-2 my-lg-0">-->
-            <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-            <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
-        <!--</form>-->
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Lensless</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
     </div>
 </nav>
-<div class="col-md-12">
-<h1>Willkommen bei Lensless!</h1>
-    <h2 id="bilder">Bilder</h2>
-</div>
-<div id="galerie" class="col-md-12">
-    <div class="row">
-    <div class="col-md-3">
-        <img class="bild" src="assets/ressources/pic/Unbenannt.PNG"/>
-    </div>
-    <div class="col-md-3">
-        <img class="bild" src="assets/ressources/pic/Unbenannt.PNG"/>
-    </div>
-    <div class="col-md-3">
-        <div class="rahmen">
-            <img class="bild" src="assets/ressources/pic/Unbenannt.PNG"/>
-            <p class="beschreibung">
-                fkasfjökasdö cfd,lsölfk dsföldaskfdsk dsfkdas jdklsfjdklsfj djsklf jklsdfjdkasjfkl k k fjesdfkldjasf
-            </p>
-        </div>
-    </div>
-    <!--<div class="col-md-1"></div>-->
-    <div class="col-md-3">
-        <div class="rahmen">
-            <img class="bild" src="assets/ressources/pic/Unbenannt.PNG"/>
-            <p class="beschreibung">
-                fkasfjökasdö cfd,lsölfk dsföldaskfdsk dsfkdas jdklsfjdklsfj djsklf jklsdfjdkasjfkl k k fjesdfkldjasf
-            </p>
-        </div>
-    </div>
-    </div>
-</div>
-<h2 id="video">Video</h2>
 
-<div id="vid">
-</div>
+<section class="bg-primary" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading text-white">Modul 152</h2>
+                <hr class="light my-4">
+                <p class="text-faded mb-4">In diesem Modul ist das Ziel das Erstellen einer Website mit eingebundenen
+                    Bildern, welche vom Team selber geschossen und bearbeitet wurden und von einem Video, welches vom
+                    Team selber gedreht und geschnitten ist.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Bilder</h2>
+                <hr class="my-4">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="p-0" id="portfolio">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="img/Keijo/Keijo_1.jpg">
+                    <img class="img-fluid" src="img/Keijo/Keijo_1.jpg" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Vergessen
+                            </div>
+                            <div>
+                                <p style="margin-top: 10px; margin-bottom: 5px">ISO-200</p>
+                                <p style="margin-bottom: 5px">1/250 Sek.</p>
+                                <p style="margin-bottom: 5px">Blende f/4</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="img/Keijo/Keijo_2.jpg">
+                    <img class="img-fluid" src="img/Keijo/Keijo_2.jpg" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Grenze
+                            </div>
+                            <div>
+                                <p style="margin-top: 10px; margin-bottom: 5px">ISO-200</p>
+                                <p style="margin-bottom: 5px">1/500 Sek.</p>
+                                <p style="margin-bottom: 5px">Blende f/4</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="img/Keijo/Keijo_3.jpg">
+                    <img class="img-fluid" src="img/Keijo/Keijo_3.jpg" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Roots
+                            </div>
+                            <div>
+                                <p style="margin-top: 10px; margin-bottom: 5px">ISO-200</p>
+                                <p style="margin-bottom: 5px">1/250 Sek.</p>
+                                <p style="margin-bottom: 5px">Blende f/5</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading">Hackerfilm</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- insert video here-->
+        </div>
+    </div>
+</section>
+
+
+<footer class="bg-dark">
+    <div class="container text-center">
+        <div>
+            <p></p>
+            <p class="text-faded">&copy; 2018 Endrit Kastrati, Elia Gerber, Keijo Nierula</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/creative.min.js"></script>
+
 </body>
-<script>
-    // self executing function here
-    (function() {
-        // your page initialization code here
-        // the DOM will be available here
-        // zeigeBilder();
-    })();
-</script>
+
 </html>
