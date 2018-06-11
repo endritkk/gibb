@@ -8,12 +8,13 @@
     <title>Lensless</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
 
 
-    <link href="css/style.css" rel="stylesheet">
+    <link href="src/css/style.css" rel="stylesheet">
+    <script src="src/js/galerie.js"></script>
 
 </head>
 
@@ -86,8 +87,8 @@
     <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
             <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="img/Keijo/Keijo_1.jpg">
-                    <img class="img-fluid" src="img/Keijo/Keijo_1.jpg" alt="">
+                <a class="portfolio-box" href="src/img/Keijo/Keijo_1.jpg">
+                    <img class="img-fluid" src="src/img/Keijo/Keijo_1.jpg" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -103,8 +104,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="img/Keijo/Keijo_2.jpg">
-                    <img class="img-fluid" src="img/Keijo/Keijo_2.jpg" alt="">
+                <a class="portfolio-box" href="src/img/Keijo/Keijo_2.jpg">
+                    <img class="img-fluid" src="src/img/Keijo/Keijo_2.jpg" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -120,8 +121,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="img/Keijo/Keijo_3.jpg">
-                    <img class="img-fluid" src="img/Keijo/Keijo_3.jpg" alt="">
+                <a class="portfolio-box" href="src/img/Keijo/Keijo_3.jpg">
+                    <img id="crack" class="img-fluid" src="src/img/Keijo/Keijo_3.jpg" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -136,11 +137,63 @@
                     </div>
                 </a>
             </div>
-
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="src/img/Keijo/Keijo_3.jpg">
+                    <img id="crack" class="img-fluid" src="src/img/Keijo/Keijo_3.jpg" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Roots
+                            </div>
+                            <div>
+                                <p style="margin-top: 10px; margin-bottom: 5px">ISO-200</p>
+                                <p style="margin-bottom: 5px">1/250 Sek.</p>
+                                <p style="margin-bottom: 5px">Blende f/5</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-        <img src="img/Endrit/Pause im Alltag_Endrit.jpg" class="col-lg-4 col-sm-6" />
-        <img src="img/Endrit/Schachmatt_Endrit.jpg" class="col-lg-4 col-sm-6" />
-        <img src="img/Endrit/Verlassen_Endrit.jpg" class="col-lg-4 col-sm-6" />
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="src/img/Keijo/Keijo_3.jpg">
+                    <img id="crack" class="img-fluid" src="src/img/Keijo/Keijo_3.jpg" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Roots
+                            </div>
+                            <div>
+                                <p style="margin-top: 10px; margin-bottom: 5px">ISO-200</p>
+                                <p style="margin-bottom: 5px">1/250 Sek.</p>
+                                <p style="margin-bottom: 5px">Blende f/5</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="src/img/Keijo/Keijo_3.jpg">
+                    <img id="crack" class="img-fluid" src="src/img/Keijo/Keijo_3.jpg" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Roots
+                            </div>
+                            <div>
+                                <p style="margin-top: 10px; margin-bottom: 5px">ISO-200</p>
+                                <p style="margin-bottom: 5px">1/250 Sek.</p>
+                                <p style="margin-bottom: 5px">Blende f/5</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            </div>
+        <img src="src/img/Endrit/Pause%20im%20Alltag_Endrit.jpg" id="ch" class="biud" />
+        <img src="src/img/Endrit/Schachmatt_Endrit.jpg" class="biud" />
+        <div class="col-lg-4 col-sm-6">
+            <img src="src/img/Endrit/Verlassen_Endrit.jpg" class="biud"  />
+        </div>
     </div>
 </section>
 <div id="Hackerfilm"></div>
@@ -162,6 +215,10 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Hackerfilm</h2>
                 <hr class="my-4">
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -177,8 +234,8 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="src/vendor/jquery/jquery.min.js"></script>
+<script src="src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Custom scripts for this template -->
 <!--<script src="js/creative.min.js"></script>-->
